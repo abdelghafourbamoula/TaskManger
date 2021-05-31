@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+</head>
+<body>
+    <div class="container_index">
+        <img src="{{url_for('static',filename='images/logo_tm.PNG')}}"
+    </div>
+    <div class="container_body">
+        Amazing Tool To Manage Your tasks
+    </div>
+    <div >
+       <a href="/login"> <button type="button" class="container_button"onmouseover="mouseoverm(this)" onmouseout="mouseoutm(this)" >Let's get Start</button></a>
+    </div>
+    <div class="container_footer">
+        Created By Abdelghafour Bamoula | Youssef Mahdi
+    </div>
+    <div class="image_task"><img src="{{url_for('static',filename='images/completed-task.PNG')}}" width="240px"></div>
+    <style>
+        .container_index{
+            text-align: center;
+            background:#0097e6 ;
+            width: 100%;
+            position:fixed;
+            top: 0px;
+            left: 0px;
+
+        }   
+        body{
+            background:blueviolet;
+            width: 100%;
+            text-decoration: none;
+        }
+        .container_footer{
+            background: #ff6e6a;
+            width: 100%;
+            position:fixed;
+            bottom: 0px;
+            padding: 1em;
+            color: white;
+
+
+        }
+        .container_body{
+            
+            position: fixed;
+            top: 40%;
+            right: 20%;
+            font-size: 30px;
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+            
+            
+        }
+        
+        .container_button{
+            border-radius: 16px;
+            background: #ff6e6a;
+            border-color:#ff6e6a ;
+            height: 60px;
+            width: 180px;
+            color: white;
+            font-size: 20px;
+            position: fixed;
+            top: 60%;
+            right: 30%;
+        }
+        .container_button:hover{
+            background-color: white;
+            color: #ff6e6a;
+
+        }
+
+        .image_task{
+            position: fixed;
+            top:40%;
+            left: 15%;
+        } 
+    </style>
+    <script src="{{url_for('static',filename='javascript/btn.js')}}">
+        
+    </script>
+</body>
+</html>

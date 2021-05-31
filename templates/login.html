@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in : Task Manager</title>
+</head>
+<body>
+    <div class="container_login">
+        <div class="login_logo">
+            <img src="{{url_for('static',filename='images/logo_tm.PNG')}}"></div>
+        <input type="text" id="input_name" placeholder="Enter Your Name"></br>
+        <input type="text" id="input_email" placeholder="Enter Your Email"></br>
+        <a href="/TaskManager"><button id="btn_log" type="button">Log in</button></a>
+    </div>
+    <div class="container_footer">
+        Created By Abdelghafour Bamoula | Youssef Mahdi
+    </div>
+    <style>
+        .container_footer{
+            background: #ff6e6a;
+            width: 100%;
+            position:fixed;
+            bottom: 0px;
+            left: 0px;
+            padding: 1em;
+            color: white;
+            text-align: center;
+
+        }
+        body{
+            text-align: center;
+        }
+        input{
+            margin-top: 2em;
+
+        }
+        button{
+            margin-top: 2em;
+            border-radius: 16px;
+            width: 150px;
+            height: 30  px;
+        }
+       #input_name{
+           border-radius: 15px;
+           width: 300px;
+           padding: 10px;
+           text-align: center;
+           border-color: black;
+           
+       }
+       
+       #input_email{
+           border-radius: 15px;
+           border-color: black;
+           width: 300px;
+           padding: 10px;
+           text-align: center;
+       }
+       .container_login{
+           margin-top: 10%;
+       }
+
+    </style>
+
+</body>
+</html>
